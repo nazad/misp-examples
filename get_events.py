@@ -11,7 +11,7 @@ def get_events():
     events = misp.events(pythonify=True)
 
     for e in events:
-        print(f'Event: {e.to_json()}')
+        print(f'Event: {e.to_json(indent=4)}')
 
 
 if __name__ == '__main__':

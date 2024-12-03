@@ -22,7 +22,7 @@ def create_attribute(value, category, type, comment, to_ids, first_seen, last_se
 
 
 def add_attribute():
-    event_id = 'b1d863c3-da15-4a42-a1ee-c756c2d78a75'
+    event_id = '4df8e7dc-49a3-4a08-a586-5c5b3616982a'
 
     if not event_id:
         print('Event id is empty!')

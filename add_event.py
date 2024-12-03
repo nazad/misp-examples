@@ -23,10 +23,10 @@ def add_event():
 
     try:
         added = misp.add_event(event, pythonify=True)
-        print(f'Created: {added.to_json()}')
+        print(f'Created: {added.to_json(indent=4)}')
 
     except Exception as e:
-        print(f'Event: {event.to_json()}')
+        print(f'Event: {event.to_json(indent=4)}')
         print(f'Exception: {repr(e)}')
 
 
