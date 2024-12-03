@@ -5,19 +5,11 @@
 @URL_SEARCH_EVENTS={{URL_MISP}}/restSearch
 @ATTRIBUTES_URL={{URL_MISP}}/attributes/restSearch
 
+###
+# List all Events
 GET {{URL_EVENTS}} HTTP/1.1
 Authorization: {{TOKEN}}
 Content-Type: application/json
 Accept: application/json
-
-{
-    "returnFormat": "json",
-    "type": {
-        "OR": [
-            "ip-src",
-            "ip-dst"
-        ]
-    }
-}
 
 ###
