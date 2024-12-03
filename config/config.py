@@ -8,7 +8,7 @@ import urllib3
 # Cleaner logs
 urllib3.disable_warnings()
 
-MISP_URL = 'http://localhost'
+MISP_URL = 'https://localhost'
 
 MISP_TOKEN = 'VpsWeu2TsfqLQ5BTfk2BgRIw6Ca6rj3vzJlIj4TX'
 
