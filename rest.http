@@ -1,0 +1,23 @@
+@TOKEN=VpsWeu2TsfqLQ5BTfk2BgRIw6Ca6rj3vzJlIj4TX
+
+@URL_MISP=https://localhost/
+@URL_EVENTS={{URL_MISP}}/events
+@URL_SEARCH_EVENTS={{URL_MISP}}/restSearch
+@ATTRIBUTES_URL={{URL_MISP}}/attributes/restSearch
+
+GET {{URL_EVENTS}} HTTP/1.1
+Authorization: {{TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "returnFormat": "json",
+    "type": {
+        "OR": [
+            "ip-src",
+            "ip-dst"
+        ]
+    }
+}
+
+###
