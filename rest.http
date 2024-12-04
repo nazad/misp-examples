@@ -2,6 +2,7 @@
 
 @URL_MISP=https://localhost/
 @URL_EVENTS={{URL_MISP}}/events
+@URL_ATTRIBUTES={{URL_MISP}}/attributes
 @URL_SEARCH_EVENTS={{URL_MISP}}/restSearch
 @ATTRIBUTES_URL={{URL_MISP}}/attributes/restSearch
 
@@ -11,5 +12,19 @@ GET {{URL_EVENTS}} HTTP/1.1
 Authorization: {{TOKEN}}
 Content-Type: application/json
 Accept: application/json
+
+###
+# Add new Event
+POST {{URL_EVENTS}} HTTP/1.1
+Authorization: {{TOKEN}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "distribution": "0",
+    "threat_level_id": "1",
+    "analysis": "0",
+    "info": "Test Event"
+}
 
 ###

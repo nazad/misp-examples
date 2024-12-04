@@ -10,4 +10,3 @@ curl -k \
     $MISP_URL_EVENTS
 
 echo ""
-
